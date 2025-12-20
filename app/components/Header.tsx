@@ -20,14 +20,17 @@ export default function Header() {
               <Link href="/" className="text-white/70 hover:text-white transition-colors text-sm">
                 Home
               </Link>
-              <Link href="/utilities" className="text-white/70 hover:text-white transition-colors text-sm">
+              <Link href="/#utilities" className="text-white/70 hover:text-white transition-colors text-sm">
                 Utilities
               </Link> 
-              <Link href="/roadmap" className="text-white/70 hover:text-white transition-colors text-sm">
+              <Link href="/#roadmap" className="text-white/70 hover:text-white transition-colors text-sm">
                 Roadmap
               </Link>
               <Link href="/presale" className="text-white/70 hover:text-white transition-colors text-sm">
                 Presale
+              </Link>
+              <Link href="/whitepaper" className="text-white/70 hover:text-white transition-colors text-sm">
+                Whitepaper
               </Link>
             </nav>
 
@@ -70,14 +73,14 @@ export default function Header() {
                 Home
               </Link>
               <Link 
-                href="/utilities" 
+                href="/#utilities" 
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Utilities
               </Link>
               <Link 
-                href="/roadmap" 
+                href="/#roadmap" 
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
