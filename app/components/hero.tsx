@@ -1,7 +1,8 @@
 'use client';
 
-import Image from 'next/image';
+
 import Header from './Header';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -43,9 +44,11 @@ export default function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
-                  <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full sm:w-auto">
-                    Presale
-                  </button>
+                 <Link href="/presale">
+  <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full sm:w-auto">
+    Presale
+  </button>
+</Link>
                   <button className="bg-white hover:bg-gray-100 text-[#0f1419] px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 w-full sm:w-auto">
                     Staking
                   </button>
