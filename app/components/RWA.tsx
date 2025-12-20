@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const presaleImages = [
-  "/presale1.png",
-  "/presale2.png",
-  "/presale3.png",
+  "/presale11.png",
+  "/presale12.png",
+  "/presale13.png",
   
 ];
 
