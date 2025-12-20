@@ -14,26 +14,25 @@ const presaleImages = [
 
 export default function RWA() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState<1 | -1>(1); // 1 = forward, -1 = backward
+  const [direction, setDirection] = useState<1 | -1>(1); 
   const [isPaused, setIsPaused] = useState(false);
 
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const maxIndex = presaleImages.length - 2; // because 2 images visible
+  const maxIndex = presaleImages.length - 2; 
 
-  /* ---------------- AUTO SLIDE (PING-PONG) ---------------- */
+ 
   useEffect(() => {
     if (isPaused) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
-        // reached end → reverse
+      
         if (prev >= maxIndex) {
           setDirection(-1);
           return prev - 1;
         }
 
-        // reached start → forward
         if (prev <= 0) {
           setDirection(1);
           return prev + 1;
@@ -46,7 +45,6 @@ export default function RWA() {
     return () => clearInterval(interval);
   }, [direction, isPaused, maxIndex]);
 
-  /* ---------------- PAUSE AFTER MANUAL ACTION ---------------- */
   useEffect(() => {
     if (!isPaused) return;
 
@@ -57,7 +55,7 @@ export default function RWA() {
     return () => clearTimeout(timer);
   }, [isPaused]);
 
-  /* ---------------- MANUAL CONTROLS ---------------- */
+
   const goToPrevious = () => {
     setIsPaused(true);
     setDirection(-1);
@@ -72,7 +70,7 @@ export default function RWA() {
 
   return (
     <div className="w-full relative">
-      <div className="relative lg:aspect-[1920/656]">
+      <div className="relative lg:aspect-[1920/656] hidden lg:flex">
         <Image
           src="/bgRWAPresale.png"
           alt="rwa bg"
@@ -84,7 +82,7 @@ export default function RWA() {
         <div className="absolute inset-0 flex items-center justify-center max-w-[96rem] mx-auto">
           <div className="w-full max-w-[90%] h-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-8">
 
-            {/* LEFT CONTENT */}
+          
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -100,7 +98,7 @@ export default function RWA() {
               </p>
             </motion.div>
 
-            {/* RIGHT CAROUSEL */}
+         
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -138,7 +136,7 @@ export default function RWA() {
                   </motion.div>
                 </div>
 
-                {/* ARROWS */}
+       
                 <button
                   onClick={goToPrevious}
                   className="absolute -left-11 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
@@ -156,6 +154,65 @@ export default function RWA() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </div>
+      <div className="relative aspect-[1058/656] flex lg:hidden">
+ <Image
+          src="/bgmobile.png"
+          alt="rwa bg"
+          fill
+          priority
+          className="object-fill border-b border-white"
+        />
+      </div>
+      <div className="w-full flex lg:hidden px-10 py-14 sm:my-16 md:py-20">
+        <div className="w-full max-w-md md:max-w-2xl mx-auto relative">
+        
+          <div className="relative overflow-hidden rounded-xl">
+            <motion.div
+              className="flex gap-3"
+              animate={{
+                x: `-${currentIndex * 50}%`,
+              }}
+              transition={{
+                duration: 0.6,
+                ease: "easeInOut",
+              }}
+            >
+              {presaleImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 w-[calc(50%-0.375rem)]"
+                >
+                  <Image
+                    src={image}
+                    alt={`Presale Phase ${index + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-contain rounded-xl"
+                    priority={index < 2}
+                  />
+                </div>
+              ))}
+            </motion.div>
+          </div>
+
+        
+          <button
+            onClick={goToPrevious}
+            className="absolute -left-8 md:-left-12 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
+            aria-label="Previous slide"
+          >
+            <IoIosArrowForward className="text-white text-3xl md:text-4xl" />
+          </button>
+
+          <button
+            onClick={goToNext}
+            className="absolute -right-8 md:-right-12 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
+            aria-label="Next slide"
+          >
+            <IoIosArrowBack className="text-white text-3xl md:text-4xl" />
+          </button>
         </div>
       </div>
     </div>
