@@ -37,6 +37,7 @@ const itemVariants: Variants = {
 export default function InnovativeUtilities({ onFeatureClick }: { onFeatureClick: (featureIndex: number) => void }) {
   return (
     <motion.div
+      id="utilities"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.1 }}
