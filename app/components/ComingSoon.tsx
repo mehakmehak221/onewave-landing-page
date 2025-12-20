@@ -2,7 +2,7 @@
 
 export default function ComingSoon() {
     return (
-        <div>
+        <div className="w-full h-screen">
            <h1>Coming Soon</h1>
         </div>
     );
