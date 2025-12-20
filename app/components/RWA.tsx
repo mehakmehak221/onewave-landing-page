@@ -9,7 +9,7 @@ const presaleImages = [
   "/presale1.png",
   "/presale2.png",
   "/presale3.png",
-  "/presale4.png",
+  
 ];
 
 export default function RWA() {
