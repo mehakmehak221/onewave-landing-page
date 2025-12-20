@@ -50,6 +50,9 @@ export default function ComingSoon() {
                   Jewellery & more.
                 </p>
 
+                <div className="w-full max-w-sm mx-auto lg:mx-0 pt-3 sm:pt-4 md:pt-5 lg:pt-6">
+                  <CountdownTimer />
+                </div>
               </div>
             </div>
 
