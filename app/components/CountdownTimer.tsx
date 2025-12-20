@@ -52,16 +52,16 @@ const CountdownTimer = () => {
           boxShadow: '0 8px 32px rgba(35, 119, 241, 0.25)',
         }}
       >
-        <div className="relative bg-black/20 backdrop-blur-md rounded-xl px-4 py-3 sm:px-8 sm:py-4 w-full h-full flex items-center justify-center">
+        <div className="relative bg-black/20 backdrop-blur-md rounded-xl px-3 py-2 sm:px-8 sm:py-4 w-full h-full flex items-center justify-center">
           <div className="absolute inset-0 bg-gradient-to-t from-transparent via-white/5 to-white/10 pointer-events-none rounded-xl" />
           
-          <div className="relative z-10 flex items-center justify-center gap-6 sm:gap-12 text-white">
+          <div className="relative z-10 flex items-center justify-center gap-4 sm:gap-12 text-white">
           
             <div className="flex flex-col items-center">
-              <span className="text-4xl sm:text-5xl lg:text-6xl font-sans font-semibold tracking-widest leading-none drop-shadow-md">
+              <span className="text-3xl sm:text-5xl lg:text-6xl font-sans font-semibold tracking-widest leading-none drop-shadow-md">
                 {String(timeLeft.days).padStart(2, '0')}
               </span>
-              <span className="text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase mt-2 opacity-75 text-blue-100">
+              <span className="text-[9px] sm:text-xs font-bold tracking-[0.3em] uppercase mt-1.5 opacity-75 text-blue-100">
                 DAYS
               </span>
             </div>
@@ -73,10 +73,10 @@ const CountdownTimer = () => {
             </div>
 
             <div className="flex flex-col items-center">
-              <span className="text-4xl sm:text-5xl lg:text-6xl font-sans font-semibold tracking-widest leading-none drop-shadow-md">
+              <span className="text-3xl sm:text-5xl lg:text-6xl font-sans font-semibold tracking-widest leading-none drop-shadow-md">
                 {String(timeLeft.hours).padStart(2, '0')}
               </span>
-              <span className="text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase mt-2 opacity-75 text-blue-100">
+              <span className="text-[9px] sm:text-xs font-bold tracking-[0.3em] uppercase mt-1.5 opacity-75 text-blue-100">
                 HOURS
               </span>
             </div>
