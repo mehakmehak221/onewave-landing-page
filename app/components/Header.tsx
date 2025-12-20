@@ -29,9 +29,10 @@ export default function Header() {
               <Link href="/presale" className="text-white/70 hover:text-white transition-colors text-sm">
                 Presale
               </Link>
-              <Link href="/whitepaper" className="text-white/70 hover:text-white transition-colors text-sm">
+                <Link href="/" className="text-white/70 hover:text-white transition-colors text-sm">
                 Whitepaper
               </Link>
+             
             </nav>
 
             <Link href="/signin" className="hidden md:block">
@@ -92,6 +93,13 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Presale
+              </Link>
+               <Link 
+                href="/" 
+                className="block text-white/70 hover:text-white transition-colors text-sm py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                  Whitepaper
               </Link>
               <Link href="/signin" className="block">
                 <button className="w-full bg-[#3b82f6] hover:bg-[#2563eb] text-white px-6 py-2.5 rounded-full font-medium transition-colors text-sm">
