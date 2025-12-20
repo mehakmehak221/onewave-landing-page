@@ -13,7 +13,7 @@ const WaveCommunity: React.FC = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center p-3 sm:p-4 overflow-hidden">
+    <div className="relative py-14 md:py-[68px] lg:py-24 flex items-center justify-center p-3 sm:p-4 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/bg2.png"
