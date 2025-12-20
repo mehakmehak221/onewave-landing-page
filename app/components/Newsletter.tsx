@@ -51,19 +51,19 @@ const WaveCommunity: React.FC = () => {
               <div className="relative w-full max-w-2xl">
                 <form
                   onSubmit={handleSubmit}
-                  className="flex flex-col sm:flex-row items-center bg-white rounded-full shadow-2xl overflow-hidden gap-2 sm:gap-0 p-2 sm:p-0"
+                  className="flex flex-col sm:flex-row items-center sm:bg-white sm:rounded-full sm:shadow-2xl sm:overflow-hidden gap-3 sm:gap-0 p-0 sm:p-0"
                 >
                   <input
                     type="email"
                     placeholder="Enter Your E-mail"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="flex-1 w-full sm:w-auto px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base text-gray-700 placeholder:text-gray-400 outline-none bg-transparent rounded-full sm:rounded-none"
+                    className="flex-1 w-full sm:w-auto px-6 py-4 text-sm sm:text-base text-gray-700 placeholder:text-gray-400 outline-none bg-white sm:bg-transparent rounded-full sm:rounded-none shadow-lg sm:shadow-none"
                     required
                   />
                   <button
                     type="submit"
-                    className="w-full sm:w-auto bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-semibold text-sm sm:text-base px-6 sm:px-10 py-3 sm:py-4 rounded-full transition-colors duration-200 whitespace-nowrap"
+                    className="w-full sm:w-auto bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-semibold text-sm sm:text-base px-6 sm:px-10 py-4 sm:py-4 rounded-full transition-colors duration-200 whitespace-nowrap shadow-lg sm:shadow-none"
                   >
                     SUBMIT
                   </button>
