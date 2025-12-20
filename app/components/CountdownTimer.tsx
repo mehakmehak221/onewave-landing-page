@@ -11,31 +11,25 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    
-    const targetDateStr = localStorage.getItem("targetDate");
-    let targetDate: Date;
-
-    if (targetDateStr) {
-      targetDate = new Date(targetDateStr);
-    } else {
-      targetDate = new Date();
-      targetDate.setDate(targetDate.getDate() + 11);
-      targetDate.setHours(targetDate.getHours() + 11);
-      localStorage.setItem("targetDate", targetDate.toISOString());
-    }
+    const startDate = new Date('2025-12-21T00:00:00');
+    const endDate = new Date('2026-01-21T00:00:00');
 
     const interval = setInterval(() => {
       const now = new Date();
-      const difference = targetDate.getTime() - now.getTime();
+      
+     
+      const remaining = endDate.getTime() - now.getTime();
 
-      if (difference > 0) {
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((difference / 1000 / 60) % 60);
-        const seconds = Math.floor((difference / 1000) % 60);
+      if (remaining > 0) {
+         
+        const days = Math.floor(remaining / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((remaining / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((remaining / 1000 / 60) % 60);
+        const seconds = Math.floor((remaining / 1000) % 60);
         
         setTimeLeft({ days, hours, minutes, seconds });
       } else {
+      
         clearInterval(interval);
         setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
