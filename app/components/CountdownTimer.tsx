@@ -16,7 +16,6 @@ const CountdownTimer = () => {
 
     const interval = setInterval(() => {
       const now = new Date();
-      
      
       const remaining = endDate.getTime() - now.getTime();
 
