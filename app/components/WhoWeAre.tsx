@@ -53,6 +53,7 @@ export default function WhoWeAre() {
     <div className="absolute inset-0 bg-black
     blur-[100px]" />
     <video
+      // autoPlay
       autoPlay
       loop
       muted
