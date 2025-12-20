@@ -75,7 +75,7 @@ export default function InnovativeUtilities({ onFeatureClick }: { onFeatureClick
             <motion.div variants={itemVariants} className="w-full h-[180px] sm:h-[200px]">
               <TextBuilder
                 video="/4.webm"
-                className="-bottom-[30%] right-[-20%] transform h-[75%] absolute"
+                className="-bottom-[4%] right-[10%] transform h-[45%] absolute"
                 MainclassName="overflow-hidden"
                 heading="Wave FinLearn"
                 description="From trading to tech, learn anytime with verified mentors. Courses that truly pay, literally."/>
