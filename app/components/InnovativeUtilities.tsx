@@ -74,7 +74,7 @@ export default function InnovativeUtilities({ onFeatureClick }: { onFeatureClick
             <motion.div variants={itemVariants} className="w-full h-[180px] sm:h-[200px]">
               <TextBuilder
                 video="/4.webm"
-                className="-bottom-[15%] right-[-20%] transform h-[75%] absolute"
+                className="-bottom-[30%] right-[-20%] transform h-[75%] absolute"
                 MainclassName="overflow-hidden"
                 heading="Wave FinLearn"
                 description="From trading to tech, learn anytime with verified mentors. Courses that truly pay, literally."/>
@@ -84,7 +84,7 @@ export default function InnovativeUtilities({ onFeatureClick }: { onFeatureClick
             <TextBuilder
               MainclassName="overflow-hidden"
               className=""
-              deepVideoClass="scale-[0.9] tranform -translate-y-12"
+              deepVideoClass="scale-[0.7] tranform -translate-y-0 lg:-translate-y-3 2xl:-translate-y-5"
               video="/2.webm"
               heading="Wave Crypto Exchange" description="A complete trading experience for all users. Fast, secure, and low-cost — all in one place."
               onClick={() => onFeatureClick(utilityFeatureMap['Wave Crypto Exchange'])}
