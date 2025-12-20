@@ -31,7 +31,7 @@ const presalePhases = [
     cliff: '4 Months',
     vesting: '10% X 13 Months total'
   }
-  // Phase 2 hidden for now - will be enabled later
+ 
   // {
   //   phase: 2,
   //   price: 0.6,
