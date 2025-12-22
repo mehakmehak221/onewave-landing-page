@@ -50,8 +50,8 @@ export default function InnovativeUtilities({ onFeatureClick }: { onFeatureClick
             <TextBuilder
               heading="Wave Blockchain"
               description="EVM-compatible blockchain driving the foundation for all DeFi systems."
-              className="absolute bottom-[25px]"
-              deepVideoClass="scale-[1.5]"
+              className="absolute -bottom-2 sm:-bottom-[10px] md:-bottom-[15px] lg:bottom-[25px]"
+              deepVideoClass="scale-[0.6] sm:scale-[0.4] md:scale-[0.5] lg:scale-[1.5]"
               MainclassName="overflow-hidden p-3 sm:p-5"
               video="/6.webm"
               onClick={() => onFeatureClick(utilityFeatureMap['Wave Blockchain'])}
