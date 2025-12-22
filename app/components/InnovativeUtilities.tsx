@@ -96,7 +96,7 @@ export default function InnovativeUtilities({ onFeatureClick }: { onFeatureClick
           <motion.div variants={itemVariants} className="w-full h-[250px] sm:h-[300px] lg:h-[350px]">
             <TextBuilder
               className="mt-5"
-              deepVideoClass="scale-[2]"
+              deepVideoClass=" lg:scale-[2]"
               MainclassName="overflow-hidden p-3 sm:p-5"
               video="/3.webm"
               heading="Crypto Gaming"
