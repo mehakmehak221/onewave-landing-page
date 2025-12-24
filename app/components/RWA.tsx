@@ -1,33 +1,26 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const presaleImages = [
-  "/presale11.png",
-  "/presale12.png",
-  "/presale13.png",
-  
-];
+const presaleImages = ["/presale11.png", "/presale12.png", "/presale13.png"];
 
 export default function RWA() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState<1 | -1>(1); 
+  const [direction, setDirection] = useState<1 | -1>(1);
   const [isPaused, setIsPaused] = useState(false);
 
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  const maxIndex = presaleImages.length - 2; 
+  const maxIndex = presaleImages.length - 2;
 
- 
   useEffect(() => {
     if (isPaused) return;
 
     const interval = setInterval(() => {
       setCurrentIndex((prev) => {
-      
         if (prev >= maxIndex) {
           setDirection(-1);
           return prev - 1;
@@ -55,7 +48,6 @@ export default function RWA() {
     return () => clearTimeout(timer);
   }, [isPaused]);
 
-
   const goToPrevious = () => {
     setIsPaused(true);
     setDirection(-1);
@@ -81,8 +73,6 @@ export default function RWA() {
 
         <div className="absolute inset-0 flex items-center justify-center max-w-[96rem] mx-auto">
           <div className="w-full max-w-[90%] h-full flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 py-8">
-
-          
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -93,12 +83,12 @@ export default function RWA() {
                 World's First Real World Assets (RWA) Backed Presale
               </h2>
               <p className="text-base lg:text-[17px] xl:text-[18px] text-white/80 leading-relaxed">
-                OneWave Presale sets a new benchmark in crypto-backed by real-world
-                assets like gold, silver, and certified gems for unmatched trust and value.
+                OneWave Presale sets a new benchmark in crypto-backed by
+                real-world assets like gold, silver, and certified gems for
+                unmatched trust and value.
               </p>
             </motion.div>
 
-         
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
@@ -106,8 +96,10 @@ export default function RWA() {
               className="w-full lg:w-[50%] xl:w-[55%] relative flex items-center justify-center"
             >
               <div className="relative w-full max-w-4xl">
-
-                <div ref={carouselRef} className="relative overflow-hidden rounded-xl">
+                <div
+                  ref={carouselRef}
+                  className="relative overflow-hidden rounded-xl"
+                >
                   <motion.div
                     className="flex gap-4"
                     animate={{
@@ -136,7 +128,6 @@ export default function RWA() {
                   </motion.div>
                 </div>
 
-       
                 <button
                   onClick={goToPrevious}
                   className="absolute -left-11 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
@@ -150,14 +141,13 @@ export default function RWA() {
                 >
                   <IoIosArrowBack className="text-white text-[34px]" />
                 </button>
-
               </div>
             </motion.div>
           </div>
         </div>
       </div>
       <div className="relative aspect-[1058/656] flex lg:hidden">
- <Image
+        <Image
           src="/bgmobile.png"
           alt="rwa bg"
           fill
@@ -167,7 +157,6 @@ export default function RWA() {
       </div>
       <div className="w-full flex lg:hidden px-10 py-14 sm:my-16 md:py-20">
         <div className="w-full max-w-md md:max-w-2xl mx-auto relative">
-        
           <div className="relative overflow-hidden rounded-xl">
             <motion.div
               className="flex gap-3"
@@ -197,7 +186,6 @@ export default function RWA() {
             </motion.div>
           </div>
 
-        
           <button
             onClick={goToPrevious}
             className="absolute -left-8 md:-left-12 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
