@@ -243,6 +243,7 @@ const TextBuilder2 = ({
       )}
     </div>
   );
+// };
 };
 
 const TextBuilder = ({
