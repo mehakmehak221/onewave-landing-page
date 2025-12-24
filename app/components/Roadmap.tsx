@@ -161,7 +161,10 @@ export default function Roadmap() {
     }
   };
   return (
-    <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20 xl:py-24">
+    <section
+      id="roadmap"
+      className="relative overflow-hidden py-12 sm:py-16 lg:py-20 xl:py-24"
+    >
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 left-0 w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] bg-blue-400/30 rounded-full blur-[80px] sm:blur-[120px]" />
         <div className="absolute bottom-0 right-0 w-[300px] h-[300px] sm:w-[500px] sm:h-[500px] bg-blue-400/30 rounded-full blur-[100px] sm:blur-[120px]" />
