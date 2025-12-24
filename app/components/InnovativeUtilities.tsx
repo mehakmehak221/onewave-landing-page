@@ -60,7 +60,7 @@ export default function InnovativeUtilities({
               description="EVM-compatible blockchain driving the foundation for all DeFi systems."
               MainclassName="overflow-hidden h-full"
               className=""
-              deepVideoClass="scale-[0.7] tranform -translate-y-0 lg:-translate-y-3 2xl:-translate-y-5"
+              deepVideoClass="scale-[0.7] lg:scale-[1.3] tranform -translate-y-0 lg:-translate-y-8 2xl:-translate-y-10" 
               video="/6.webm"
               onClick={() =>
                 onFeatureClick(utilityFeatureMap["Wave Blockchain"])
@@ -130,7 +130,7 @@ export default function InnovativeUtilities({
             className="w-full flex-grow min-h-[250px] lg:h-[350px]"
           >
             <TextBuilder
-              deepVideoClass="scale-[0.7] tranform -translate-y-0 lg:-translate-y-3 2xl:-translate-y-5"
+              deepVideoClass="scale-[0.7] lg:scale-[1.6] tranform -translate-y-0 lg:-translate-y-20 2xl:-translate-y-24"
               MainclassName="overflow-hidden p-3 sm:p-5 h-full"
               video="/3.webm"
               heading="Crypto Gaming"
