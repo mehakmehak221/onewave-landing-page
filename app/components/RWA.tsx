@@ -77,7 +77,7 @@ export default function RWA() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="w-full lg:w-[50%] xl:w-[45%] flex flex-col space-y-6 px-2"
+              className="w-full lg:w-[60%] xl:w-[50%] flex flex-col space-y-6 px-2"
             >
               <h2 className="text-2xl sm:text-3xl lg:text-[37px] xl:text-5xl text-white leading-tight">
                 Planned Utility-Driven Ecosystem Access
@@ -95,15 +95,15 @@ export default function RWA() {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-              className="w-full lg:w-[50%] xl:w-[55%] relative flex items-center justify-center"
+              className="w-full lg:w-[40%] xl:w-[50%] relative flex items-center justify-center"
             >
-              <div className="relative w-full max-w-4xl">
+              <div className="relative w-full max-w-4xl flex justify-end">
                 <Image
                   src="/techwave.png"
                   alt="TechWave Logo"
                   width={320}
                   height={320}
-                  className=" object-contain rounded-xl mx-auto"
+                  className=" object-contain rounded-xl"
                 />
               </div>
             </motion.div>

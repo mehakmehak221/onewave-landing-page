@@ -48,8 +48,8 @@ export default function Hero() {
                 </p>
 
                 <div className="flex sm:gap-4 pt-4">
-                  <Link href="/presale">
-                    <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full sm:w-auto">
+                  <Link href="/presale" className="w-full">
+                    <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full">
                       Presale
                     </button>
                   </Link>
