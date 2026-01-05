@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-8xl">
         <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-3xl xl:text-3xl font-sf-pro-display-regular mb-4 sm:mb-6 leading-tight">
           DECENTRALIZED ECOSYSTEMS, DESIGNED FOR THE FUTURE
         </h2>
