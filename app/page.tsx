@@ -6,9 +6,10 @@ import Hero from "./components/hero";
 import Wrapper from "./components/ui/Wrapper";
 import InnovativeUtilities from "./components/InnovativeUtilities";
 import Roadmap from "./components/Roadmap";
-import Presale from "./components/Presale";
+import RWA from "./components/RWA";
 import Newsletter from "./components/Newsletter";
 import FeatureSection from "./components/FeatureSection";
+import Footer from "./components/Footer";
 
 const features = [
   {
@@ -139,8 +140,9 @@ export default function Home() {
       )}
 
       <Roadmap />
-      <Presale />
+      <RWA />
       <Newsletter />
+      <Footer />
     </Wrapper>
   );
 }

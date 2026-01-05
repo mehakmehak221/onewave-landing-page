@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,29 +13,50 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="Wave Logo" className="h-6 sm:h-8 w-auto brightness-0 invert" />
+              <img
+                src="/logo.png"
+                alt="Wave Logo"
+                className="h-6 sm:h-8 w-auto brightness-0 invert"
+              />
             </Link>
 
             <nav className="hidden md:flex items-center gap-4 lg:gap-6">
-              <Link href="/" className="text-white/70 hover:text-white transition-colors text-sm">
+              <Link
+                href="/"
+                className="text-white/70 hover:text-white transition-colors text-sm"
+              >
                 Home
               </Link>
-              <Link href="/#utilities" className="text-white/70 hover:text-white transition-colors text-sm">
+              <Link
+                href="/#utilities"
+                className="text-white/70 hover:text-white transition-colors text-sm"
+              >
                 Utilities
-              </Link> 
-              <Link href="/#roadmap" className="text-white/70 hover:text-white transition-colors text-sm">
+              </Link>
+              <Link
+                href="/#roadmap"
+                className="text-white/70 hover:text-white transition-colors text-sm"
+              >
                 Roadmap
               </Link>
-              <Link href="/presale" className="text-white/70 hover:text-white transition-colors text-sm">
+              <Link
+                href="/presale"
+                className="text-white/70 hover:text-white transition-colors text-sm"
+              >
                 Presale
               </Link>
-                <Link href="/" className="text-white/70 hover:text-white transition-colors text-sm">
+              <Link
+                href="https://one-wave.gitbook.io/one-wave-docs"
+                className="text-white/70 hover:text-white transition-colors text-sm"
+              >
                 Whitepaper
               </Link>
-             
             </nav>
 
-            <Link href="/signin" className="hidden md:block">
+            <Link
+              href="https://dashboard.onewave.app/login"
+              className="hidden md:block"
+            >
               <button className="bg-[#3b82f6] hover:bg-[#2563eb] text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-full font-medium transition-colors text-sm">
                 Login
               </button>
@@ -66,42 +87,45 @@ export default function Header() {
 
           {isMobileMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4 space-y-3">
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
               </Link>
-              <Link 
-                href="/#utilities" 
+              <Link
+                href="/#utilities"
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Utilities
               </Link>
-              <Link 
-                href="/#roadmap" 
+              <Link
+                href="/#roadmap"
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Roadmap
               </Link>
-              <Link 
-                href="/presale" 
+              <Link
+                href="/presale"
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Presale
               </Link>
-               <Link 
-                href="/" 
+              <Link
+                href="https://one-wave.gitbook.io/one-wave-docs"
                 className="block text-white/70 hover:text-white transition-colors text-sm py-2"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                  Whitepaper
+                Whitepaper
               </Link>
-              <Link href="/signin" className="block">
+              <Link
+                href="https://dashboard.onewave.app/login"
+                className="block"
+              >
                 <button className="w-full bg-[#3b82f6] hover:bg-[#2563eb] text-white px-6 py-2.5 rounded-full font-medium transition-colors text-sm">
                   Login
                 </button>

@@ -28,60 +28,37 @@ const itemVariants: Variants = {
 const roadmapData = [
   {
     quarter: "Q1",
-    year: "2025",
+    year: "2026",
     items: [
-      "Launch of the OneWave Platform",
-      "Community Airdrop through tap-to-earn games",
-      "Presale & Staking launch for the WAVE token",
-      "Introduction of RWA-backed Presale and Staking",
-      "Release of the Wave Money App for easy crypto management",
+      "India recharge & bill payments (Live)",
+      "Crypto deposit & withdrawal (Live)",
+      "Buy, Sell & Swap functionality (Live)",
+      "Wave Money platform partnership (1st January 2026)",
+      "Recharge & bill payments for 90+ countries (by 15th January 2026)",
+      "Wave Gaming launch (End of January 2026)",
+      "International Forex platform launch (End of January 2026)",
     ],
   },
   {
     quarter: "Q2",
-    year: "2025",
+    year: "2026",
     items: [
-      "Listing on tracking sites such as CoinMarketCap (CMC) and CoinGecko (CG)",
-      "Launchpad listings for broader accessibility",
-      "Integration of Crypto Gaming Utilities for play-to-earn and tap-to-earn",
-      "Launch of the Wave Crypto Card for seamless global spending",
+      "Physical Wave Card launch (1st week of April 2026)",
+      "OneWave Blockchain Mainnet launch",
     ],
   },
   {
     quarter: "Q3",
-    year: "2025",
+    year: "2026",
     items: [
-      "Launch of the Arbitrage Bot Utility via subscription model",
-      "Launch of the Traditional Staking Platform for passive income",
-      "Introduction of the Crypto Payment Gateway for businesses",
+      "Merchant crypto payment gateway launch",
+      "AI-powered calling and voice-based transactions",
     ],
   },
   {
     quarter: "Q4",
-    year: "2025",
-    items: [
-      "Launch of the Multi-Chain Cross-Payment Bridge for seamless transactions",
-      "Release of the Wave Micro Tasks Mobile App for earning crypto",
-      "Go live with FinLearn by Wave, enabling users to buy courses using WAVE Tokens",
-      "Introduction of the International Forex by Wave for smooth broker deposits",
-      "Listing on multiple reputed Crypto Exchanges for added liquidity",
-    ],
-  },
-  {
-    quarter: "Q1",
     year: "2026",
-    items: [
-      "Deploy the advanced Wave AI Calling system for scalable, human-like voice automation",
-      "Execute strategic acquisitions and partnerships to expand the ecosystem",
-    ],
-  },
-  {
-    quarter: "Q2",
-    year: "2026",
-    items: [
-      "Launch the high-performance WAVE Crypto Exchange with complete trading functionalities",
-      "Mainnet release of the Wave Blockchain, powering the full ecosystem with reliability",
-    ],
+    items: ["Finlearn platform launch"],
   },
 ];
 const RoadmapCard = ({
