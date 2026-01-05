@@ -1,9 +1,8 @@
-'use client';
+"use client";
 
-
-import Header from './Header';
+import Header from "./Header";
 // import Link from 'next/link';
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -29,30 +28,31 @@ export default function Hero() {
               <div
                 className="backdrop-blur-xl bg-linear-to-br from-white/5 to-white/2 border border-white/10 rounded-xl sm:rounded-2xl shadow-2xl p-6 sm:p-8 lg:p-12"
                 style={{
-                  boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255,255,255,0.1)'
+                  boxShadow:
+                    "0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255,255,255,0.1)",
                 }}
               >
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight flex flex-col">
                   Onewave
-
-                  <span className="text-white/90 mt-3 sm:mt-4">Ride The Wave Of Web3</span>
+                  <span className="text-white/90 mt-3 sm:mt-4">
+                    Ride The Wave Of Web3
+                  </span>
                   {/* <span className="text-white/90">Multi-Utility Platform</span>
                   <span className="text-white/90">For The Web3 World</span> */}
                 </h1>
 
                 <p className="text-white/70 text-base sm:text-lg max-w-xl leading-relaxed mt-2 mb-2">
-                  A revolutionary multi-utility platform uniting blockchain networks and empowering users with an integrated set of decentralized tools and services.
+                  A revolutionary multi-utility platform uniting blockchain
+                  networks and empowering users with an integrated set of
+                  decentralized tools and services.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4">
-                 <Link href="/presale">
-  <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full sm:w-auto">
-    Presale
-  </button>
-</Link>
-                  <button className="bg-white hover:bg-gray-100 text-[#0f1419] px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 w-full sm:w-auto">
-                    Staking
-                  </button>
+                <div className="flex sm:gap-4 pt-4">
+                  <Link href="/presale">
+                    <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full sm:w-auto">
+                      Presale
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -107,5 +107,5 @@ export default function Hero() {
         </div>
       </main>
     </div>
-  )
+  );
 }

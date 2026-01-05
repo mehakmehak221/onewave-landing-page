@@ -60,15 +60,17 @@ export default function Presale() {
             className="w-full lg:w-1/2 text-center lg:text-left"
           >
             <span className="inline-block text-xs sm:text-sm font-semibold text-white/60 tracking-wider uppercase mb-3 sm:mb-4">
-              PRESALE 2025
+              PLANNED ECOSYSTEM ACCESS
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6">
-              World's First Real World Assets (RWA) Backed Presale
+              Planned Utility-Driven Ecosystem Access
             </h2>
-            <p className="text-white/70 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              The OneWave Presale introduces a new benchmark in crypto — backed
-              by real-world assets such as gold, silver, and certified gems,
-              ensuring unmatched trust and tangible value.
+            <p className="text-white/70 text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl mx-auto lg:mx-0">
+              OneWave is developing a decentralized ecosystem designed to
+              support future utility-driven participation. Token-related
+              functionality, if introduced, will be enabled only following
+              regulatory review, eligibility verification, and acceptance of
+              applicable agreements, including SAFT where required.
             </p>
           </motion.div>
 

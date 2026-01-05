@@ -64,7 +64,7 @@ export default function RWA() {
     <div className="w-full relative">
       <div className="relative lg:aspect-[1920/656] hidden lg:flex">
         <Image
-          src="/bgRWAPresale.png"
+          src="/bgRWAPresaleimg.png"
           alt="rwa bg"
           fill
           priority
@@ -77,15 +77,17 @@ export default function RWA() {
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="w-full lg:w-[50%] xl:w-[45%] flex flex-col space-y-6 px-4"
+              className="w-full lg:w-[50%] xl:w-[45%] flex flex-col space-y-6 px-2"
             >
               <h2 className="text-2xl sm:text-3xl lg:text-[37px] xl:text-5xl text-white leading-tight">
-                World's First Real World Assets (RWA) Backed Presale
+                Planned Utility-Driven Ecosystem Access
               </h2>
-              <p className="text-base lg:text-[17px] xl:text-[18px] text-white/80 leading-relaxed">
-                OneWave Presale sets a new benchmark in crypto-backed by
-                real-world assets like gold, silver, and certified gems for
-                unmatched trust and value.
+              <p className="text-base lg:text-base xl:text-base text-white/80 leading-relaxed ">
+                OneWave is developing a decentralized ecosystem designed to
+                support future utility-driven participation. Token-related
+                functionality, if introduced, will be enabled only following
+                regulatory review, eligibility verification, and acceptance of
+                applicable agreements, including SAFT where required.
               </p>
             </motion.div>
 
@@ -96,111 +98,33 @@ export default function RWA() {
               className="w-full lg:w-[50%] xl:w-[55%] relative flex items-center justify-center"
             >
               <div className="relative w-full max-w-4xl">
-                <div
-                  ref={carouselRef}
-                  className="relative overflow-hidden rounded-xl"
-                >
-                  <motion.div
-                    className="flex gap-4"
-                    animate={{
-                      x: `-${currentIndex * 50}%`,
-                    }}
-                    transition={{
-                      duration: 0.6,
-                      ease: "easeInOut",
-                    }}
-                  >
-                    {presaleImages.map((image, index) => (
-                      <div
-                        key={index}
-                        className="flex-shrink-0 w-[calc(50%-0.5rem)]"
-                      >
-                        <Image
-                          src={image}
-                          alt={`Presale Phase ${index + 1}`}
-                          width={600}
-                          height={400}
-                          className="w-full h-auto object-contain rounded-xl"
-                          priority={index < 2}
-                        />
-                      </div>
-                    ))}
-                  </motion.div>
-                </div>
-
-                <button
-                  onClick={goToPrevious}
-                  className="absolute -left-11 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
-                >
-                  <IoIosArrowForward className="text-white text-[34px]" />
-                </button>
-
-                <button
-                  onClick={goToNext}
-                  className="absolute -right-11 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
-                >
-                  <IoIosArrowBack className="text-white text-[34px]" />
-                </button>
+                <Image
+                  src="/techwave.png"
+                  alt="TechWave Logo"
+                  width={320}
+                  height={320}
+                  className=" object-contain rounded-xl mx-auto"
+                />
               </div>
             </motion.div>
           </div>
         </div>
       </div>
-      <div className="relative aspect-[1058/656] flex lg:hidden">
-        <Image
-          src="/bgmobile.png"
-          alt="rwa bg"
-          fill
-          priority
-          className="object-fill border-b border-white"
-        />
-      </div>
+      <div
+        className="relative aspect-[1058/656] flex lg:hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url(/bgmobile.png)" }}
+      ></div>
       <div className="w-full flex lg:hidden px-10 py-14 sm:my-16 md:py-20">
         <div className="w-full max-w-md md:max-w-2xl mx-auto relative">
           <div className="relative overflow-hidden rounded-xl">
-            <motion.div
-              className="flex gap-3"
-              animate={{
-                x: `-${currentIndex * 50}%`,
-              }}
-              transition={{
-                duration: 0.6,
-                ease: "easeInOut",
-              }}
-            >
-              {presaleImages.map((image, index) => (
-                <div
-                  key={index}
-                  className="flex-shrink-0 w-[calc(50%-0.375rem)]"
-                >
-                  <Image
-                    src={image}
-                    alt={`Presale Phase ${index + 1}`}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-contain rounded-xl"
-                    priority={index < 2}
-                  />
-                </div>
-              ))}
-            </motion.div>
+            <Image
+              src="/techwave.png"
+              alt="TechWave Logo"
+              width={250}
+              height={250}
+              className=" object-contain rounded-xl mx-auto"
+            />
           </div>
-
-          <button
-            onClick={goToPrevious}
-            className="absolute -left-8 md:-left-12 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
-            aria-label="Previous slide"
-          >
-            <IoIosArrowForward className="text-white text-3xl md:text-4xl" />
-          </button>
-
-          <button
-            onClick={goToNext}
-            className="absolute -right-8 md:-right-12 top-1/2 -translate-y-1/2 z-10 transition hover:scale-110"
-            aria-label="Next slide"
-          >
-            <IoIosArrowBack className="text-white text-3xl md:text-4xl" />
-          </button>
         </div>
       </div>
     </div>

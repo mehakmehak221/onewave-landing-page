@@ -60,7 +60,7 @@ export default function InnovativeUtilities({
               description="EVM-compatible blockchain driving the foundation for all DeFi systems."
               MainclassName="overflow-hidden h-full"
               className=""
-              deepVideoClass="scale-[0.7] lg:scale-[1.3] tranform -translate-y-0 lg:-translate-y-8 2xl:-translate-y-10" 
+              deepVideoClass="scale-[0.7] lg:scale-[1.3] tranform -translate-y-0 lg:-translate-y-8 2xl:-translate-y-10"
               video="/6.webm"
               onClick={() =>
                 onFeatureClick(utilityFeatureMap["Wave Blockchain"])
@@ -243,7 +243,7 @@ const TextBuilder2 = ({
       )}
     </div>
   );
-// };
+  // };
 };
 
 const TextBuilder = ({
