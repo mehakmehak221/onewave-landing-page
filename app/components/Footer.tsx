@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
           DECENTRALIZED ECOSYSTEMS, DESIGNED FOR THE FUTURE
         </h2>
         <p className="text-white text-sm sm:text-base md:text-lg lg:text-lg mb-8 sm:mb-10 lg:mb-12 font-normal ">
-          OneWave Fintech S.A. Is Developing A Decentralized Ecosystem Focused On
+          OneWave Fintech S.A. (in formation, Republic of Panama) Is Developing A Decentralized Ecosystem Focused On
           Utility-Driven Participation, Network Innovation, And Scalable Web3
           Infrastructure
         </p>
@@ -78,6 +78,11 @@ const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-8xl mt-12 pt-8 border-t border-white/10 text-center">
+        <p className="text-white/60 text-sm font-sf-pro-display-regular">
+          Powered by OneWave Fintech S.A. (in formation, Republic of Panama)
+        </p>
       </div>
     </div>
   );
