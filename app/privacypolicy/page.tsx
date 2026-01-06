@@ -25,7 +25,7 @@ export default function PrivacyPolicyPage() {
             </p>
 
             <p className="text-white/80 mb-8 leading-relaxed">
-              At Onewave, your privacy is our priority. This Privacy Policy
+              At OneWave Fintech S.A., your privacy is our priority. This Privacy Policy
               explains how we collect, use, protect, and share your personal and
               financial information when you use our application, website, or
               services.
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
                   We use your information to:
                 </p>
                 <ul className="list-disc list-inside text-white/80 space-y-2 ml-4">
-                  <li>Create and manage your Onewave account</li>
+                  <li>Create and manage your OneWave Fintech S.A.  account</li>
                   <li>Process payments and crypto deposits/withdrawals</li>
                   <li>Perform identity verification (KYC/AML)</li>
                   <li>Enhance app functionality and user experience</li>
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
                   6. Cookies and Tracking Technologies
                 </h2>
                 <p className="text-white/80 mb-4 leading-relaxed">
-                  Onewave may use cookies and similar technologies to:
+                  OneWave Fintech S.A. may use cookies and similar technologies to:
                 </p>
                 <ul className="list-disc list-inside text-white/80 space-y-2 ml-4">
                   <li>Analyze app usage</li>
@@ -187,7 +187,7 @@ export default function PrivacyPolicyPage() {
                   8. Children&apos;s Privacy
                 </h2>
                 <p className="text-white/80 leading-relaxed">
-                  Onewave is not intended for users under the age of 18. We do
+                  OneWave Fintech S.A. is not intended for users under the age of 18. We do
                   not knowingly collect data from minors.
                 </p>
               </section>
@@ -198,7 +198,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
                 <p className="text-white/80 leading-relaxed">
                   We may update this Privacy Policy from time to time. Changes
-                  will be posted on the app or website. Continued use of Onewave
+                  will be posted on the app or website. Continued use of OneWave Fintech S.A. 
                   after updates implies your agreement to the revised policy.
                 </p>
               </section>

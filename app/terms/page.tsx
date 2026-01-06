@@ -24,8 +24,23 @@ export default function TermsPage() {
               <strong>Effective Date: 01-01-2025</strong>
             </p>
 
+            <div className="mb-8">
+              <h2 className="text-xl font-bold text-white mb-2">
+                Pre-Incorporation Legal Notice
+              </h2>
+              <p className="text-white/80 leading-relaxed">
+                The platform, content, and materials presented on this website are
+                provided for informational and preparatory purposes only. OneWave
+                Fintech S.A. (in formation, Republic of Panama) is currently in
+                the process of incorporation. No sale, offer, contractual
+                commitment, or legal obligation is effective until incorporation
+                is completed and the applicable legal and corporate framework,
+                including definitive agreements, is finalized.
+              </p>
+            </div>
+
             <p className="text-white/80 mb-8 leading-relaxed">
-              Welcome to Onewave. By accessing or using our mobile application
+              Welcome to OneWave Fintech S.A. By accessing or using our mobile application
               or services, you agree to be bound by the following Terms and
               Conditions. Please read them carefully.
             </p>
@@ -36,7 +51,7 @@ export default function TermsPage() {
                   1. Acceptance of Terms
                 </h2>
                 <p className="text-white/80 leading-relaxed">
-                  By using Onewave, you confirm that you are at least 18 years
+                  By using OneWave Fintech S.A., you confirm that you are at least 18 years
                   old and legally eligible to enter into this agreement.
                   Continued use of the platform indicates your acceptance of
                   these terms.
@@ -48,7 +63,7 @@ export default function TermsPage() {
                   2. Services Offered
                 </h2>
                 <p className="text-white/80 mb-4 leading-relaxed">
-                  Onewave allows users to:
+                  OneWave Fintech S.A. allows users to:
                 </p>
                 <ul className="list-disc list-inside text-white/80 space-y-2 ml-4">
                   <li>Deposit and withdraw funds (including cryptocurrency)</li>
@@ -86,7 +101,7 @@ export default function TermsPage() {
                   4. Crypto Transactions
                 </h2>
                 <p className="text-white/80 mb-4 leading-relaxed">
-                  Onewave facilitates crypto transactions via third-party
+                  OneWave Fintech S.A. facilitates crypto transactions via third-party
                   integrations and is not responsible for any delays or losses
                   caused by blockchain processing.
                 </p>
@@ -140,7 +155,7 @@ export default function TermsPage() {
                   8. Limitation of Liability
                 </h2>
                 <p className="text-white/80 leading-relaxed">
-                  Onewave is not liable for any indirect, incidental, or
+                  OneWave Fintech S.A.  is not liable for any indirect, incidental, or
                   consequential damages arising from use of the app or loss of
                   access, funds, or data.
                 </p>
