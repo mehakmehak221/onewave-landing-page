@@ -15,7 +15,7 @@ const features = [
   {
     id: "feature-1",
     badge: "New",
-    title: "The Core of The OneWave Ecosystem",
+    title: "The Core of The OneWave Fintech S.A. (in formation, Republic of Panama) Ecosystem",
     description:
       "Fast, scalable, and fully integrated, our blockchain is built to manage high-performance demands across diverse use cases. With complete EVM compatibility, developers can deploy smart contracts and dApps seamlessly using trusted tools and frameworks.",
     buttonText: "Learn More",
