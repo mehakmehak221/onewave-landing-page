@@ -66,7 +66,7 @@ export default function Presale() {
               Planned Utility-Driven Ecosystem Access
             </h2>
             <p className="text-white/70 text-sm sm:text-base lg:text-lg leading-relaxed max-w-3xl mx-auto lg:mx-0">
-              OneWave is developing a decentralized ecosystem designed to
+              OneWave Fintech S.A. is developing a decentralized ecosystem designed to
               support future utility-driven participation. Token-related
               functionality, if introduced, will be enabled only following
               regulatory review, eligibility verification, and acceptance of

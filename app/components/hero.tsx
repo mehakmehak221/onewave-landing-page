@@ -33,8 +33,8 @@ export default function Hero() {
                     "0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255,255,255,0.1)",
                 }}
               >
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight flex flex-col">
-                  Onewave
+                <h1 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-white leading-tight flex flex-col">
+                 OneWave Fintech S.A. (in formation, Republic of Panama)
                   <span className="text-white/90 mt-3 sm:mt-4">
                     Ride The Wave Of Web3
                   </span>
