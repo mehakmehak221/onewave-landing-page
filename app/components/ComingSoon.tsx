@@ -39,7 +39,7 @@ export default function ComingSoon() {
                 <div className="space-y-4 sm:space-y-6">
                   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-normal text-white leading-tight">
                     Participate in the{" "}
-                    <span className="block sm:inline">OneWave Fintech S.A. Ecosystem</span>
+                    <span className="block sm:inline">OneWave Fintech S.A. (in formation, Republic of Panama) Ecosystem</span>
                   </h1>
 
                   <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-lg mx-auto lg:mx-0">

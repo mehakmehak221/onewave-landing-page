@@ -87,7 +87,7 @@ export default function WhoWeAre() {
               </p>
 
               <h2 className="text-3xl sm:text-4xl lg:text-4xl font-bold text-white leading-tight">
-                Welcome to OneWave Fintech S.A. 
+                Welcome to OneWave Fintech S.A. (in formation, Republic of Panama) 
                 <br />
                 <span className="text-white/90">The Decentralized</span>
                 <br />
@@ -98,7 +98,7 @@ export default function WhoWeAre() {
 
               <div className="space-y-3 sm:space-y-4 pt-2 sm:pt-4">
                 <p className="text-white/70 text-sm sm:text-base leading-relaxed">
-                  OneWave Fintech S.A. Fintech S.A. is an advanced Web3 ecosystem powered by blockchain
+                  OneWave Fintech S.A. (in formation, Republic of Panama) is an advanced Web3 ecosystem powered by blockchain
                   innovation, created to enable users with a range of utilities
                   across multiple chains. From digital payments and gaming to
                   staking, OneWave Fintech S.A. serves as your unified platform for all
