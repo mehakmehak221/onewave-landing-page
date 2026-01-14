@@ -51,7 +51,7 @@ export default function Hero() {
                 <div className="flex sm:gap-4 pt-4">
                   <Link href="/presale" className="w-full">
                     <button className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg shadow-blue-600/30 w-full">
-                      Presale
+                    Join Whitelist
                     </button>
                   </Link>
                 </div>

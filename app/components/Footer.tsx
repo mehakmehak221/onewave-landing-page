@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <div className="relative py-14 md:py-[68px] lg:py-24 overflow-hidden">
+    <div className="relative pt-14 md:pt-[68px] lg:pt-24 pb-6 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src="/footerbg.png"

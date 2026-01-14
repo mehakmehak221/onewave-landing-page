@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'Gilmer';
   src: url('/fonts/Gilmer_Font/Gilmer Regular.woff2') format('woff2'),
-       url('/fonts/Gilmer_Font/Gilmer Regular.otf') format('opentype');
+    url('/fonts/Gilmer_Font/Gilmer Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Gilmer';
   src: url('/fonts/Gilmer_Font/Gilmer Light.woff2') format('woff2'),
-       url('/fonts/Gilmer_Font/Gilmer Light.otf') format('opentype');
+    url('/fonts/Gilmer_Font/Gilmer Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 @font-face {
   font-family: 'Gilmer';
   src: url('/fonts/Gilmer_Font/Gilmer Medium.woff2') format('woff2'),
-       url('/fonts/Gilmer_Font/Gilmer Medium.otf') format('opentype');
+    url('/fonts/Gilmer_Font/Gilmer Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 @font-face {
   font-family: 'Gilmer';
   src: url('/fonts/Gilmer_Font/Gilmer Bold.woff2') format('woff2'),
-       url('/fonts/Gilmer_Font/Gilmer Bold.otf') format('opentype');
+    url('/fonts/Gilmer_Font/Gilmer Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -39,15 +39,15 @@
 @font-face {
   font-family: 'Gilmer';
   src: url('/fonts/Gilmer_Font/Gilmer Heavy.woff2') format('woff2'),
-       url('/fonts/Gilmer_Font/Gilmer Heavy.otf') format('opentype');
+    url('/fonts/Gilmer_Font/Gilmer Heavy.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --font-gilmer: 'Gilmer', sans-serif;
 }
 
@@ -60,13 +60,6 @@
   --animate-float: float 3s ease-in-out infinite;
   --animate-float-delayed: float 3s ease-in-out 0.5s infinite;
   --animate-float-slow: float 4s ease-in-out infinite;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
@@ -86,9 +79,12 @@ html {
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
