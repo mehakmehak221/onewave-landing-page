@@ -75,6 +75,14 @@ const Footer: React.FC = () => {
                   PRIVACY POLICY
                 </Link>
               </li>
+               <li>
+                <Link
+                  href="/legalnotice"
+                  className="text-white hover:text-blue-300 transition-colors duration-200 font-inter"
+                >
+                  LEGAL NOTICE
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
